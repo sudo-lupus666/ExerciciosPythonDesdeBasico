@@ -30,6 +30,7 @@ def exercicio4():
     
     print (f'A média final é {media_dos_bimestres()}')
 
+<<<<<<< HEAD
 def exercicio5():
     print("Programa conversor de metros para centímetros")
     medida = int(input("Digite a medida em metros que você deseja converter: "))
@@ -41,4 +42,7 @@ def exercicio5():
     return converteMedidas
 
 exercicio5()
+=======
+exercicio4()
+>>>>>>> parent of 92ec20c (teste_mac)
     
