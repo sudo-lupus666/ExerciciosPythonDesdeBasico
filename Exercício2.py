@@ -30,5 +30,8 @@ def exercicio4():
     
     print (f'A média final é {media_dos_bimestres()}')
 
+
+#testando a edição no Mac
+
 exercicio4()
     
