@@ -1,5 +1,3 @@
-#Exercicio 5
-
 def exercicio5():
     print("Programa conversor de metros para centímetros")
     medida = int(input("Digite a medida em metros que você deseja converter: "))
