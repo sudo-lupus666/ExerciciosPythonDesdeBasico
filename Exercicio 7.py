@@ -5,10 +5,9 @@ def calcula_quadrado():
     def calcula_area():
         area = lado * lado
         return area
-    area = calcula_area()
 
     def calcula_area_vezes_2():
-        area_dobro = area * 2
+        area_dobro = calcula_area() * 2
         return area_dobro
 
     print (f'A area do quadrado de lado {lado} é {calcula_area()} e a área em dobro é {calcula_area_vezes_2()}')
