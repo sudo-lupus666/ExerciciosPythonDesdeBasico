@@ -18,3 +18,4 @@ def converte_temp():
 converte_temp()    
 
 #Melhorar esse código, retrabalhando as casas decimais da resposta.
+#Melhorar esse código, com o uso de uma property
