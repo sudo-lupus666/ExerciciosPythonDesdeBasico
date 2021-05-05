@@ -4,7 +4,7 @@
 def converte_temp():
 
     print ("**Bem-vindo ao seu software de conversão de temperaturas**")
-    temp_fahrenheit = int(input("Insira a temperatura em Fahrenheit: "))
+    temp_fahrenheit = float(input("Insira a temperatura em Fahrenheit: "))
 
     def conversor_temp():
         calculo_1 = (temp_fahrenheit - 32)/9
