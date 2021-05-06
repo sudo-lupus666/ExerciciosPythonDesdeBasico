@@ -12,10 +12,6 @@ def calcula_salario():
         salario = valor_hora * horas_trabalhadas
         return salario
 
-    salario = calculo_do_salario()
-
-    print (f'Você ganha {salario} reais por mês')
+    print (f'Você ganha {calculo_do_salario()} reais por mês')
 
 calcula_salario()
-
-#Aprimorar esse software usando properties
