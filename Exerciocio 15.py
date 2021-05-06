@@ -18,16 +18,32 @@ def calcula_salario():
 
     print ('**Esse é um software que calcula o seu salário**')
 
-    valor_hora = int(input("Informe o quanto você ganha por hora: "))
+    salario_hora = int(input("Informe o quanto você ganha por hora: "))
     horas_trabalhadas = int(input("Informe qunantas horas você trabalha por mês: "))
 
     def calculo_do_salario():
-        salario = valor_hora * horas_trabalhadas
+        salario = salario_hora * horas_trabalhadas
         return salario
 
-    def mensagens para 
+    def desconto_imposto_de_renda():
+        descontoImpostodeRenda = (calculo_do_salario() * 0,11) - calculo_do_salario()
+        return descontoImpostodeRenda         
 
+    def desconto_INSS():
+        descontoInss = (calculo_do_salario() * 0,8) - calculo_do_salario()
+        return descontoInss
+                        
+    def desconto_Sindicato():
+        descontoSindicato = (calculo_do_salario() * 0,5) - calculo_do_salario()
+        return desconto_Sindicato()
 
-    print (f'Você ganha {calculo_do_salario()} reais por mês')
+    def salario_liquido():
+        salarioLiquido = calculo_do_salario() - desconto_imposto_de_renda() - desconto_INSS() - desconto_Sindicato()        
+        return salarioLiquido
 
+    def mensagens_usuario():
+        print (f"Seu salário bruto é: R$ {calculo_do_salario()}, o desconto do imposto de renda é de R${desconto_imposto_de_renda()}, o desconto do INSS é de R$ {desconto_INSS()}, o desconto do sindicato é de {desconto_Sindicato()}. O seu salário líquido é de: {salario_liquido()}")
+
+    mensagens_usuario()
+    
 calcula_salario()

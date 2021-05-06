@@ -10,11 +10,14 @@ def calcula_multa():
     print("**Esse é o seu software para calcular a multa sobre o excesso de pesca**")
     pesca_dia = int(input("Insira a quantidade em quilos de peixe que você pescou hoje: "))
 
-    def calculo_multa(pesca_dia):
+    def calculo_multa():
         limite_diario = 50
-        pesca_excedente = limite_diario - pesca_dia
-        if pesca_excedente > 0:
-            print(f'você pescou além do limite e deverá pagar uma multa de {calculo_multa()}')
-        else: print ('Você pescou uma quantidade de peixes dentro do limite, portanto não precisará pagar multa')
+        pesca_excedente = pesca_dia - limite_diario
+        return pesca_excedente
+
+    if calculo_multa() > 1:
+        print(f'você pescou além do limite e deverá pagar uma multa de {calculo_multa()}')
+    else: 
+        print ('Você pescou uma quantidade de peixes dentro do limite, portanto não precisará pagar multa.')
 
 calcula_multa()
