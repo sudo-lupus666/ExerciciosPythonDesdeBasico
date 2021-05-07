@@ -46,7 +46,6 @@ def calcula_salario():
     def mensagens_usuario():
         print (f"Seu salário bruto é: R$ {calculo_do_salario()}, o desconto do imposto de renda é de R${desconto_imposto_de_renda()}, o desconto do INSS é de R$ {desconto_INSS()}, o desconto do sindicato é de . O seu salário líquido é de: {salario_liquido()}")
 
-
     calculo_do_salario()
     desconto_imposto_de_renda()
     desconto_INSS()
