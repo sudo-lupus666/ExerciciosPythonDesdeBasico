@@ -9,10 +9,10 @@ def converte_temp():
     def conversor_temp():
         calculo_1 = (temp_fahrenheit - 32)/9
         temperatura_em_Celcios = calculo_1 * 5
-        return temperatura_em_Celcios
+        return round(temperatura_em_Celcios, 0)
 
     print (f'{temp_fahrenheit} graus Fahrenheit equivalem a {conversor_temp()} graus Celcius')
 
 converte_temp()    
 
-#Melhorar esse código, retrabalhando as casas decimais da resposta.
+#Melhorar esse código, convertendo vírgular para pontos
