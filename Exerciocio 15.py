@@ -45,7 +45,7 @@ def calcula_salario():
 
     def informe_rendimentos_usuario():
         print (f"Seu salário bruto é: R$ {calculo_do_salario()}, o desconto do imposto de renda é R${desconto_imposto_de_renda()}, o desconto do INSS é R$ {desconto_INSS()}, o desconto do sindicato é R$ {desconto_Sindicato()}. O seu salário líquido é:{salario_liquido()}")
-
+        
     informe_rendimentos_usuario()
 
 calcula_salario()
