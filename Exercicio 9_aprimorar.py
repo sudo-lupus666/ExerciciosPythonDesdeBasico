@@ -11,11 +11,8 @@ def converte_temp():
         temperatura_em_Celcios = calculo_1 * 5
         return temperatura_em_Celcios
 
-    temp_celcius = conversor_temp()
-
-    print (f'{temp_fahrenheit} graus Fahrenheit equivalem a {temp_celcius} graus Celcius')
+    print (f'{temp_fahrenheit} graus Fahrenheit equivalem a {conversor_temp()} graus Celcius')
 
 converte_temp()    
 
 #Melhorar esse código, retrabalhando as casas decimais da resposta.
-#Melhorar esse código, com o uso de uma property

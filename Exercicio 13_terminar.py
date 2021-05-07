@@ -1,17 +1,4 @@
-#Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, 
-# usando a seguinte fórmula: (72.7*altura) - 58
-
-def pesoIdeal():
-
-    print ("**Programa para informar o seu peso ideal**")
-
-    altura = int(input("Informe a sua altura: "))
-
-    def calcula_peso_ideal():
-        peso_ideal = altura * 72,7
-        peso_ideal_passo2 = 
-        return peso_ideal
-
-    print (f'Considerando a altura de {altura} metros, o seu peso ideal é {calcula_peso_ideal()}')
-
-pesoIdeal()
+'''Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu 
+peso ideal, utilizando as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7'''
