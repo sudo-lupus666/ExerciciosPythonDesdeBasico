@@ -5,26 +5,27 @@
 
 from decimal import *
 
- def calculo_da_qtdd_tinta():
+def calculo_da_qtdd_tinta():
 
-        print('Esse software determina quantas latas de tinta você precisará usar para pintar a sua parede e qual será o custo final**')
+    print('Esse software determina quantas latas de tinta você precisará usar para pintar a sua parede e qual será o custo final**')
 
-        tamanho_parede = input('Informe qual é a area da parede a ser pintada, em m2: ')
+    tamanho_parede = int(input('Informe qual é a area da parede a ser pintada, em m2: '))
 
-        def qtdd_tinta():
-            qttd_tinta = tamanho_parede / 3
-            return qttd_tinta
+    def qtdd_tinta():
+        qttd_tinta = round(tamanho_parede / 3, 1)
+        return qttd_tinta
 
-        def qtdd_latas():
-            qtdd_latas = qtdd_tinta() / 18
-            return qtdd_latas
+    def qtdd_latas():
+        qtdd_latas = int(qtdd_tinta() / 18 + 1)
+        return qtdd_latas
 
-        def orcamento():
-            custo = qtdd_latas() * 80
+    def orcamento():
+        custo = qtdd_latas() * 80
+        return custo
 
-        def teste():
-            print (f'tamanho parede: {tamanho parede()}, qtdd tinta: {qtdd_tinta()}, qtdd latas: {qtdd latas()}, orcamento {orcament()}')
+    def teste():
+        print (f'A sua parede de tamanho {tamanho_parede}m2 necessitará de {qtdd_tinta()} litros de tinta. Você precisa, portanto, adquirir {qtdd_latas()} lata(s) de tinta. Você irá gastar R$ {orcamento()} reais, em nossa loja')
 
-        teste()
+    teste()
         
-     calculo_da_qtdd_tinta()
+calculo_da_qtdd_tinta()
