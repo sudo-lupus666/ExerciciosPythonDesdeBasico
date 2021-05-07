@@ -28,29 +28,24 @@ def calcula_salario():
         return salario
 
     def desconto_imposto_de_renda():
-        descontoImpostodeRenda =  - calculo_do_salario() * 0.11 - calculo_do_salario()
+        descontoImpostodeRenda =  calculo_do_salario() * 0.11
         return descontoImpostodeRenda       
 
     def desconto_INSS():
-        descontoInss = calculo_do_salario() - calculo_do_salario() * 0.8
+        descontoInss = calculo_do_salario() * 0.08
         return descontoInss
                         
     def desconto_Sindicato():
-        descontoSindicato = calculo_do_salario() - calculo_do_salario() * 0.5
-        return desconto_Sindicato
+        descontoSindicato = calculo_do_salario() * 0.05
+        return descontoSindicato
 
     def salario_liquido():
         salarioLiquido = calculo_do_salario() - desconto_imposto_de_renda() - desconto_INSS()      
         return salarioLiquido
 
-    def mensagens_usuario():
-        print (f"Seu salário bruto é: R$ {calculo_do_salario()}, o desconto do imposto de renda é de R${desconto_imposto_de_renda()}, o desconto do INSS é de R$ {desconto_INSS()}, o desconto do sindicato é de . O seu salário líquido é de: {salario_liquido()}")
+    def informe_rendimentos_usuario():
+        print (f"Seu salário bruto é: R$ {calculo_do_salario()}, o desconto do imposto de renda é R${desconto_imposto_de_renda()}, o desconto do INSS é R$ {desconto_INSS()}, o desconto do sindicato é R$ {desconto_Sindicato()}. O seu salário líquido é:{salario_liquido()}")
 
-    calculo_do_salario()
-    desconto_imposto_de_renda()
-    desconto_INSS()
-    '''desconto_Sindicato()'''
-    salario_liquido()
-    mensagens_usuario()
+    informe_rendimentos_usuario()
 
 calcula_salario()
