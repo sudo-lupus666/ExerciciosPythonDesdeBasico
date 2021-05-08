@@ -23,6 +23,16 @@ def calculo_da_qtdd_tinta():
         qtdd_latas = round(qtdd_tinta() / 18 + 1)
         return qtdd_latas
 
+    def plural_latas():
+        if qtdd_latas() > 1:
+            return 'latas'
+        else: return 'lata'
+
+    def plural_galoes():
+        if qtdd_galoes() > 1:
+            return 'galões'
+        else: return 'galão'        
+
     def qtdd_galoes():
         qtdd_galoes = round(qtdd_tinta() / 3.6 + 0.5)
         return qtdd_galoes
@@ -32,7 +42,7 @@ def calculo_da_qtdd_tinta():
         return custo
 
     def retorno_user():
-        print (f'A sua parede de tamanho {tamanho_parede}m2 necessitará de {qtdd_tinta()} litros de tinta. Você precisa, portanto, adquirir {qtdd_latas()} lata(s) de tinta ou, se preferir, {qtdd_galoes()}. Você irá gastar R$ {orcamento()} reais, em nossa loja')
+        print (f'A sua parede de tamanho {tamanho_parede}m2 necessitará de {qtdd_tinta()} litros de tinta. Você precisa, portanto, adquirir {qtdd_latas()} {plural_latas()} de tinta ou, se preferir, {qtdd_galoes()}{plural_galoes()}. Você irá gastar R$ {orcamento()} reais, em nossa loja')
 
     retorno_user()
         

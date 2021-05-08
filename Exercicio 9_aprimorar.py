@@ -15,4 +15,4 @@ def converte_temp():
 
 converte_temp()    
 
-#Melhorar esse código, convertendo vírgular para pontos
+#Melhorar esse código, convertendo vírgulas para pontos
