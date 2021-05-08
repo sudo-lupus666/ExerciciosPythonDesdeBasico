@@ -2,9 +2,9 @@ from decimal import *
 
 def calculo_da_qtdd_tinta():
 
-    print('Esse software determina quantas latas de tinta você precisará usar para pintar a sua parede e qual será o custo final**')
+    print('Esse software determina quantas latas de tinta vocÃª precisarÃ¡ usar para pintar a sua parede e qual serÃ¡ o custo final**')
 
-    tamanho_parede = int(input('Informe qual é a area da parede a ser pintada, em m2: '))
+    tamanho_parede = float(input('Informe qual Ã© a area da parede a ser pintada, em m2: '))
 
     def qtdd_tinta():
         qttd_tinta = round(tamanho_parede / 3, 1)
@@ -21,8 +21,8 @@ def calculo_da_qtdd_tinta():
 
     def plural_galoes():
         if qtdd_galoes() > 1:
-            return 'galões'
-        else: return 'galão'        
+            return 'galÃµes'
+        else: return 'galÃ£o'        
 
     def qtdd_galoes():
         qtdd_galoes = round(qtdd_tinta() / 3.6 + 0.5)
@@ -33,7 +33,7 @@ def calculo_da_qtdd_tinta():
         return custo
 
     def retorno_user():
-        print (f'A sua parede de tamanho {tamanho_parede}m2 necessitará de {qtdd_tinta()} litros de tinta. Você precisa, portanto, adquirir {qtdd_latas()} {plural_latas()} de tinta ou, se preferir, {qtdd_galoes()}{plural_galoes()}. Você irá gastar R$ {orcamento()} reais, em nossa loja')
+        print (f'A sua parede de tamanho {tamanho_parede}m2 necessitarÃ¡ de {qtdd_tinta()} litros de tinta. VocÃª precisa, portanto, adquirir {qtdd_latas()} {plural_latas()} de tinta ou, se preferir, {qtdd_galoes()} {plural_galoes()}. VocÃª irÃ¡ gastar R$ {orcamento()} reais, em nossa loja')
 
     retorno_user()
         
