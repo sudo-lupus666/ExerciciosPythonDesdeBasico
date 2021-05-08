@@ -1,4 +1,4 @@
 def exercicio1():
-    print ("helllo, world")
+    print ("hello, world")
 
 exercicio1()
