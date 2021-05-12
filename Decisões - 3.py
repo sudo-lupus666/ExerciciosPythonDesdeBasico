@@ -4,13 +4,11 @@
 def verifica_sexualidade(): 
 
     print ("**Programa que verifica o input de um user e determina se esse user é homem ou mulher**")
-    identificacao = (input("**Por favor, digite 'f' para sexo feminino ou 'm' para sexo masculino: **")).lower()
+    identificacao = (input("Por favor, digite 'f' para sexo feminino ou 'm' para sexo masculino: ")).lower()
 
     def validador_input():
-        if identificacao == 'f' or 'm': return True
+        if identificacao == 'm' or identificacao == 'f': return True
         else: return False
-
-    print (validador_input())        
 
     def define_sexo():
         if validador_input() == True:
@@ -19,7 +17,7 @@ def verifica_sexualidade():
         else: print ('Opção inválida')  
 
     def resposta():
-        print (f' De acordo com o que você nos infornou, você é uma pessoa do sexo {define_sexo()}')
+        print (f' De acordo com o que você nos infornou, você é uma pessoa do sexo {define_sexo()}.')
 
     resposta()
 
