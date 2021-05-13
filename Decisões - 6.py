@@ -1,7 +1,6 @@
 #Faça um Programa que leia três números e mostre o maior deles.
-
     
-    from decimal import *
+from decimal import *
 
 def analisaNumero():
 
@@ -12,10 +11,10 @@ def analisaNumero():
     numero3 = float(input("Informe o terceiro número: "))
 
     def verificaMaior():
-    numeros = [numero1, numero2, numero3]
-    numeros.sort 
-   
+        numeros = [numero1, numero2, numero3]
+        numeros.sort(reverse=True)
+        return round(numeros[0])
+    
+    print (verificaMaior())
 
-    print (verificaAprovacao())
-
-aprovadoReprovado()
+analisaNumero()
