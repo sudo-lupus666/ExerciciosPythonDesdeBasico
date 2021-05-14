@@ -6,7 +6,7 @@ def calcula_salario():
     print ('**Esse é um software que calcula o seu salário**')
 
     valor_hora = int(input("Informe o quanto você ganha por hora: "))
-    horas_trabalhadas = int(input("Informe qunantas horas você trabalha por mês: "))
+    horas_trabalhadas = int(input("Informe quantas horas você trabalha por mês: "))
 
     def calculo_do_salario():
         salario = valor_hora * horas_trabalhadas
