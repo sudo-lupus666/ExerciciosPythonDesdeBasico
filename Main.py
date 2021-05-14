@@ -1,2 +1,1 @@
-from Exercicio_17 import calculo_da_qtdd_tinta
-calculo_da_qtdd_tinta
+from Decisoes_7 import analisaNumero

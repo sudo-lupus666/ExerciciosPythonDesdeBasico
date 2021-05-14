@@ -6,15 +6,24 @@ def analisaNumero():
 
     print ("**Programa - lê 3 números e devolve o maior**")
 
-    numero1 = float(input("Informe o primeiro número: "))
-    numero2 = float(input("Informe o segundo número: "))
-    numero3 = float(input("Informe o terceiro número: "))
+    def entrada():
+            numeros = []
+            sequencia = 1
+            while len(numeros) != 3:
+                numero = float(input(f"Informe o número {sequencia}: "))
+                numeros.append(numero)
+                sequencia +=1         
+            return numeros
 
     def verificaMaior():
-        numeros = [numero1, numero2, numero3]
-        numeros.sort(reverse=True)
-        return round(numeros[0])
+        numeros = entrada()
+        numeros_sortidos = sorted(numeros)
+        return numeros, numeros_sortidos
     
-    print (verificaMaior())
+    def retorno_user():
+        for item1, item2 in verificaMaior():
+            print (item1, item2[0])
+    
+    retorno_user()
 
 analisaNumero()
