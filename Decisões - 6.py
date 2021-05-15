@@ -18,11 +18,12 @@ def analisaNumero():
     def verificaMaior():
         numeros = entrada()
         numeros_sortidos = sorted(numeros)
-        return numeros, numeros_sortidos
+        listas = (numeros, numeros_sortidos)
+        return listas
     
     def retorno_user():
-        for item1, item2 in verificaMaior():
-            print (item1, item2[0])
+        for lista1, lista2 in verificaMaior():
+            print (lista1, lista2)
     
     retorno_user()
 
