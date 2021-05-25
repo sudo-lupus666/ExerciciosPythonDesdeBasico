@@ -21,20 +21,24 @@ def calcula_salario():
         salario_atual = input(float("Informe o salário atual do funcionário: "))
         return salario_atual
 
-    def calcula_salario():
+    def calcula_aumento():
         salario = entrada()
-        if salario <= 280: salario *= 1.20
-        elif salario > 280 and salario < 700: salario *= 1.15
-        elif salario >= 700 and salario < 1500: salario *= 1.10 
-        else: salario *= 1.05
-        return salario
+        if salario <= 280: aumento = salario * 0.20
+        elif salario > 280 and salario < 700: aumento = salario * 0.15
+        elif salario >= 700 and salario < 1500:  aumento = salario * 0.10 
+        else:  aumento = salario * 0.05
+        return aumento
+
+    def porcentagem_aumento():
+        salario = entrada()
+        if salario <= 280: mensagem_aumento = f'você recebeu um aumento de 20%'
+        elif salario > 280 and salario < 700: mensagem_aumento = f'você recebeu um aumento de 15%'
+        elif salario >= 700 and salario < 1500: mensagem_aumento = f'você recebeu um aumento de 10%'
+        else: mensagem_aumento = f'você recebeu um aumento de 05%'
+        return mensagem_aumento
 
     def mensagem():
-        salario = entrada()
-        if entrada() == "m": return f"Bom dia!"
-        elif entrada() == "v": return f"Boa tarde!"
-        elif entrada() == "n": return f"Boa noite!"
-        else: return f"turno inválido, digite uma opção válida"
+        return f'Prezado funcionário, o seu salário anterior era de {entrada}' 
 
 #    while entrada() != "m" or entrada() != "v" or entrada() != "n": entrada()
     print (mensagem())
