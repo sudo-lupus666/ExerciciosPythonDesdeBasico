@@ -21,8 +21,9 @@ def calcula_salario():
         salario_atual = float(input("Informe o salário atual do funcionário: "))
         return salario_atual
 
+    salario = entrada()
+
     def calcula_aumento():
-        salario = entrada()
         if salario <= 280: aumento = salario * 0.20
         elif salario > 280 and salario < 700: aumento = salario * 0.15
         elif salario >= 700 and salario < 1500:  aumento = salario * 0.10 
@@ -30,7 +31,6 @@ def calcula_salario():
         return aumento
 
     def porcentagem_aumento():
-        salario = entrada()
         if salario <= 280: mensagem_aumento = '20%'
         elif salario > 280 and salario < 700: mensagem_aumento = '15%'
         elif salario >= 700 and salario < 1500: mensagem_aumento = '10%'
@@ -40,9 +40,9 @@ def calcula_salario():
     def mensagem():
         return (
             f'Prezado funcionário, o seu salário '
-            f'anterior era de R$ {entrada()}, o seu aumento foi de R$ {calcula_aumento()} e '
-            f'a porcentagem do seu aumento foi de {porcentagem_aumento()}. O seu novo salário é '
-            f' {entrada() + calcula_aumento()}'
+            f'anterior era de R$ {salario}. O seu aumento foi de R$ {calcula_aumento()}. '
+            f'A porcentagem do seu aumento foi de {porcentagem_aumento()}. O seu novo salário é:'
+            f' R$ {salario + calcula_aumento()}'
         )
 
     print (mensagem())
